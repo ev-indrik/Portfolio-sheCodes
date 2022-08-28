@@ -34,6 +34,10 @@ p {
   text-align: center;
 }
 
+.mini-buttons {
+  display: none;
+}
+
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -90,4 +94,20 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .elephant-image,
+  .weatherapp-image,
+  .portfolio-image {
+    display: none;
+  }
+  .normal-buttons,
+  .contactme-button,
+  .aboutme-button {
+    display: none;
+  }
+  .mini-buttons {
+    display: inline-block;
+  }
 }
